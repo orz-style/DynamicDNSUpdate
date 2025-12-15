@@ -1,13 +1,13 @@
 #!/bin/sh
 
 #****************************************************************************
-#    ddns_update.sh - script to update AWS Route53 record
-#    version: 2.1.0
+#    ddns-update.sh - script to update AWS Route53 record
+#    version: 2.2.0
 #****************************************************************************
 
 ## Variables
-APP_NAME='ddns_update.sh'
-APP_DATA_PATH='/opt/ddns_update'
+APP_NAME='ddns-update.sh'
+APP_DATA_PATH='/opt/ddns-update'
 
 IP_INFO_WEB='ipinfo.io'
 IP_DATA_FILE=$APP_DATA_PATH/data/current_ip.dat
