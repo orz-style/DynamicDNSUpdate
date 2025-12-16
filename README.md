@@ -12,7 +12,7 @@ This script checks the current public IP and updates AWS Route53 record if IP ad
 
 ```console
  $ cd /path/to/DynamicDNSUpdate
- $ sudo docker image build -t ddns_update .
+ $ sudo docker image build -t ddns-update .
 ```
 
 ## Author
