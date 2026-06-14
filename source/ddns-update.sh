@@ -9,7 +9,7 @@
 APP_NAME='ddns-update.sh'
 APP_DATA_PATH='/opt/ddns-update'
 
-IP_INFO_WEB='ipinfo.io'
+IP_INFO_WEB='v4.api.ipinfo.io/ip'
 IP_DATA_FILE=$APP_DATA_PATH/data/current_ip.dat
 
 ## Functions
@@ -46,7 +46,7 @@ else
 fi
 
 # Get current IP address
-CURRENT_IP=`curl -sS $IP_INFO_WEB | jq -r '.ip'`
+CURRENT_IP=`curl -sS $IP_INFO_WEB`
 if [ -n "$CURRENT_IP" ]; then
     echo $CURRENT_IP > $IP_DATA_FILE
 else
