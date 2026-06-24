@@ -9,7 +9,7 @@
 APP_NAME='ddns-update.sh'
 APP_DATA_PATH='/opt/ddns-update'
 
-IP_INFO_WEB='v4.api.ipinfo.io/ip'
+IP_INFO_WEB='https://v4.api.ipinfo.io/ip'
 IP_DATA_FILE=$APP_DATA_PATH/data/current_ip.dat
 
 ## Functions
